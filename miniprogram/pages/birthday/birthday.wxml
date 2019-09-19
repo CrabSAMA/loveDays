@@ -1,0 +1,7 @@
+<!--miniprogram/pages/birthday/birthday.wxml-->
+<i-button bind:click="handleClick" type="primary" bind:click="handleClick">添加生日</i-button>
+<view wx:for="{{birthdayData}}" class="birthday-card" bindtap="handleClickBirthDay" data-index="{{index}}">
+  <i-card title="{{item.name}}">
+    <view slot="footer">生日：{{item.birthday}}</view>
+  </i-card>
+</view>

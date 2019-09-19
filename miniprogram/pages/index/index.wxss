@@ -1,0 +1,78 @@
+/**index.wxss**/
+.getUserInfo {
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loveImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.detail{
+  z-index: 9999;
+  width: 720rpx;
+  height: 100rpx;
+  text-align: center;
+  bottom: 0;
+  box-shadow: 1px 1px 15px #F48081;
+  border-radius: 7px;
+  margin-bottom: 20rpx;
+  position: fixed;
+  background-color: #FFFFFF;
+}
+.line{
+  margin: 0;
+  padding: 0;
+  width: 720rpx;
+  height: 1rpx;
+  background: radial-gradient(#F48081,#FFFFFF);
+  overflow: hidden;
+}
+.day{
+  position: fixed;
+  bottom: 150rpx;
+  color: white;
+  left: 410rpx;
+}
+.setImage{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 30px;
+  left: 20px;
+}
+/* 这下面是有关滚动的CSS */
+.textContainer{
+  width: 100%;
+  position: relative;
+  height: 47rpx;
+}
+.text{
+  white-space: nowrap;
+  position: absolute;
+}
+/* 这上面是有关滚动的CSS */
+.leftWeather{
+  width:33%;
+  display: inline-block;
+  font-size: 14px;
+  color: #5B5B5B;
+}
+.rightWeather{
+  width:33%;
+  display: inline-block;
+  font-size: 14px;
+  color: #5B5B5B;
+}
+.temperature{
+  width:33%;
+  display: inline-block;
+}
+.weather{
+  display: flex;
+  align-items: center;
+}

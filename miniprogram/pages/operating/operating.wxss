@@ -1,0 +1,12 @@
+/* pages/operating/operating.wxss */
+.operatingContainer{
+  height: 100%;
+}
+.item{
+  margin: 10rpx;
+  padding: 10rpx;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid #87CEFA;
+  font-size: 15px;
+}

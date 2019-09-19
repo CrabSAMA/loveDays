@@ -1,0 +1,21 @@
+<!--pages/crop/crop.wxml-->
+<image-cropper 
+    id="image-cropper" 
+    limit_move="{{true}}" 
+    disable_rotate="{{true}}"
+    disable_ratio="{{true}}"
+    width="{{width}}" 
+    height="{{height}}"
+    max_width="{{max_width}}"
+    max_height="{{max_height}}"
+    min_width="{{min_width}}"
+    min_height="{{min_height}}"
+    imgSrc="{{src}}" 
+    bindload="cropperload" 
+    bindimageload="loadimage" 
+    bindtapcut="clickcut">
+  </image-cropper>
+<view class='bottom'>
+  <button catchtap='submit'>确定</button>
+</view>
+

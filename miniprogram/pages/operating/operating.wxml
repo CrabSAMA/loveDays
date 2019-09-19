@@ -1,0 +1,6 @@
+<!--pages/operating/operating.wxml-->
+<!-- <view class='operatingContainer'>
+  <view class='item' bindtap='handleTap'>生日记录</view>
+</view> -->
+<i-button bind:click="handleClick" type="info" shape="circle">生日记录</i-button>
+<i-load-more tip="努力开发ing( • ̀ω•́ )✧" loading="{{ false }}" />

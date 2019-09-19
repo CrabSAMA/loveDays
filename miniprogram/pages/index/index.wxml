@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <image src='{{img}}' class="loveImage"></image>
+  </view>
+  <view bindtap='handldImg'>
+    <image class='setImage' src='../../assets/images/setPhoto.png'></image>  
+  </view>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='getUserInfo'> 获取头像昵称 </button>
+  <view class="day">
+    <text style='text-shadow: black 0.1em 0.1em 0.2em;'>相爱已经 </text>
+    <text style='font-size:35px;text-shadow: black 0.1em 0.1em 0.2em;'>{{loveDay}}</text>
+    <text style='text-shadow: black 0.1em 0.1em 0.2em;'> 天</text>
+  </view>
+  <view class='detail'>
+    <view class='textContainer'>
+      <!-- <view class='text' style='{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;'>{{scrollText}}</view> -->
+      <text>loveWelcome</text>
+    </view>
+    <view class="line"></view>
+    <view class='weather'>
+      <view class='leftWeather'>
+        <text>{{jmWeather}}</text>
+      </view>
+      <view class='temperature'>
+        <text style=''>{{temperature}}</text>
+      </view>
+      <view class='rightWeather'>
+        <text style=''>{{czWeather}}</text>
+      </view>
+    </view>
+  </view>
+  
+</view>

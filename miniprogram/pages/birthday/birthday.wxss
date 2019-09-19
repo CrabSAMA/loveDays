@@ -1,0 +1,4 @@
+/* miniprogram/pages/birthday/birthday.wxss */
+.birthday-card{
+  margin-bottom: 15px;
+}
