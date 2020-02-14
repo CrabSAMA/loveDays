@@ -7,7 +7,8 @@
     "van-button": "vant-dist/button/index",
     "van-field": "vant-dist/field/index",
     "van-cell": "vant-dist/cell/index",
-    "van-cell-group": "vant-dist/cell-group/index"
+    "van-cell-group": "vant-dist/cell-group/index",
+    "i-badge": "dist/badge/index"
   },
   "pages": [
     "pages/index/index",
@@ -15,7 +16,8 @@
     "pages/operating/operating",
     "pages/crop/crop",
     "pages/birthday/birthday",
-    "pages/birthday/addBirthday/addBirthday"
+    "pages/birthday/addBirthday/addBirthday",
+    "pages/card/card"
   ],
   "window": {
     "backgroundTextStyle": "light"

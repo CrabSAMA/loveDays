@@ -1,0 +1,14 @@
+<!--miniprogram/pages/card/card.wxml-->
+<view class="container">
+  <view class="coupon-list">
+    <!-- 第一个 -->
+    <view class="sawtooth-bor item">
+      <view class="pt10 discount">
+        <text class="fs36">♥情人节礼物券♥</text>
+        <view class="fs12">有效期：2020.02.14-拿到为止</view>
+        <view class="fs12">介绍：由于众所周知的原因，不能如期过情人节而推出的补偿券</view>
+      </view>
+      <view class="textc receive">猪猪专属</view>
+    </view>
+  </view>
+</view>

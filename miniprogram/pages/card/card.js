@@ -1,4 +1,4 @@
-// pages/operating/operating.js
+// miniprogram/pages/card/card.js
 Page({
 
   /**
@@ -62,20 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  handleClickBirthday: function() {
-    // wx.showToast({
-    //   title: '啊呀，等我继续做QAQ',
-    //   icon: 'none',
-    //   duration: 1500
-    // })
-    wx.navigateTo({
-      url: '../birthday/birthday',
-    })
-  },
-  handleClickCard: function () {
-    wx.navigateTo({
-      url: '../card/card',
-    })
   }
 })
