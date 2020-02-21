@@ -1,0 +1,59 @@
+<scroll-view scroll-y class='content-info'>
+  <!-- 轮播图 -->
+  <swiper class='content-info-slide' indicator-active-color='rgba(255,255,255,.5)' indicator-color='#fff' indicator-dots circular autoplay>
+    <swiper-item>
+      <image src='./images/banner.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='./images/banner.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='./images/banner.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 功能区 -->
+  <view class='content-info-portal'>
+    <view>
+      <image src='./images/04.png'></image>
+      <text>私人</text>
+    </view>
+    <view>
+      <image src='./images/05.png'></image>
+      <text>每日歌曲推荐</text>
+    </view>
+    <view>
+      <image src='./images/06.png'></image>
+      <text>新歌榜</text>
+    </view>
+  </view>
+  <!-- 热门音乐 -->
+  <view class='content-info-list'>
+    <view class='list-title'>推荐音乐</view>
+    <view class='list-inner'>
+      <view class='list-item'>
+        <image src='./images/cover.jpg'></image>
+        <view>好听</view>
+      </view>
+      <view class='list-item'>
+        <image src='./images/cover.jpg'></image>
+        <view>好听</view>
+      </view>
+      <view class='list-item'>
+        <image src='./images/cover.jpg'></image>
+        <view>好听</view>
+      </view>
+      <view class='list-item'>
+        <image src='./images/cover.jpg'></image>
+        <view>好听</view>
+      </view>
+      <view class='list-item'>
+        <image src='./images/cover.jpg'></image>
+        <view>好听</view>
+      </view>
+      <view class='list-item'>
+        <image src='./images/cover.jpg'></image>
+        <view>好听</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

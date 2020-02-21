@@ -4,4 +4,5 @@
 </view> -->
 <i-button bind:click="handleClickBirthday" type="info" shape="circle">生日记录</i-button>
 <i-button bind:click="handleClickCard" type="info" shape="circle">猪猪的专属卡</i-button>
+<i-button bind:click="handleClickMusic" type="info" shape="circle">音乐播放器</i-button>
 <i-load-more tip="努力开发ing( • ̀ω•́ )✧" loading="{{ false }}" />

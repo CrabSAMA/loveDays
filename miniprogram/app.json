@@ -17,7 +17,8 @@
     "pages/crop/crop",
     "pages/birthday/birthday",
     "pages/birthday/addBirthday/addBirthday",
-    "pages/card/card"
+    "pages/card/card",
+    "pages/musicPlayer/musicPlayer"
   ],
   "window": {
     "backgroundTextStyle": "light"

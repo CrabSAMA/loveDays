@@ -77,5 +77,10 @@ Page({
     wx.navigateTo({
       url: '../card/card',
     })
+  },
+  handleClickMusic: function () {
+    wx.navigateTo({
+      url: '../musicPlayer/musicPlayer',
+    })
   }
 })
