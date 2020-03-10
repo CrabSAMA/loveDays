@@ -20,7 +20,7 @@
 	},
 	"appid": "wxa37b26688df208e8",
 	"projectname": "%E6%81%8B%E7%88%B1Days",
-	"libVersion": "2.8.2",
+	"libVersion": "2.10.2",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
@@ -40,6 +40,10 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 1,
 			"list": [
@@ -50,9 +54,9 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "temp",
-					"pathName": "pages/musicPlayer/musicPlayer",
+					"id": 1,
+					"name": "pages/travelMap/setArea/setArea",
+					"pathName": "pages/travelMap/setArea/setArea",
 					"query": "",
 					"scene": null
 				}

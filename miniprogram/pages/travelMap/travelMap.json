@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../component/ec-canvas/ec-canvas"
+  },
+  "navigationBarBackgroundColor": "#FFB6C1",
+  "navigationBarTitleText": "广东省旅行地图"
+}

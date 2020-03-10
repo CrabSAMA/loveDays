@@ -1,0 +1,5 @@
+<!--miniprogram/pages/travelMap/travelMap.wxml-->
+<view class="container">
+  <ec-canvas id="dom-chart" canvas-id="chart" ec="{{ ec }}"></ec-canvas>
+  <view class="h123" bindtap="setArea"></view> 
+</view>

@@ -1,0 +1,12 @@
+/* miniprogram/pages/travelMap/setArea/setArea.wxss */
+.value-class {
+  flex: none !important;
+}
+.area-button {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.list-group {
+  margin-bottom: 46px;
+}

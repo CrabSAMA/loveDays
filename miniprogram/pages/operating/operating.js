@@ -82,5 +82,10 @@ Page({
     wx.navigateTo({
       url: '../musicPlayer/musicPlayer',
     })
+  },
+  handleClickMap: function () {
+    wx.navigateTo({
+      url: '../travelMap/travelMap',
+    })
   }
 })
