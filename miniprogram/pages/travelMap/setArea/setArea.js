@@ -65,38 +65,34 @@ Page({
 
   noop() { },
   handleGetAreaData() {
-    const db = wx.cloud.database();
-    db.collection('gdTravelData').get()
-      .then((res) => {
-        // console.log(res.data[0].list);
+    try {
+      const value = wx.getStorageSync('gdTravelData');
+      if (value) {
         this.setData({
-          result: res.data[0].list
+          result: value
         });
-    })
+      }
+    } catch (error) {
+      
+    }
   },
   onConfirm() {
-    const db = wx.cloud.database();
     let upload = this.data.result;
     console.log(upload);
-    wx.cloud.callFunction({
-      name: 'setGdTravelArea',
-      data: {
-        list: upload
-      },
-      success: (res) => {
-        wx.showToast({
-          title: "成功(〃'▽'〃)",
-          icon: 'success',
-          duration: 1500,
-          //延时操作，显示完Toast再返回
-          success: function () {
-            setTimeout(function () {
-              wx.navigateBack();
-            }, 1500);
-          }
-        })
-      },
-      fail: console.error
-    })
+    try {
+      wx.setStorageSync('gdTravelData', upload);
+      wx.showToast({
+        title: "成功(〃'▽'〃)",
+        icon: 'success',
+        duration: 1500,
+        //延时操作，显示完Toast再返回
+        success: function () {
+          setTimeout(function () {
+            wx.navigateBack();
+          }, 1500);
+        }
+      })
+    } catch (error) {
+    }
   }
 })

@@ -120,14 +120,14 @@ Page({
     let _this = this;
     if (chart !== null) {
       chart.showLoading();
-      const db = wx.cloud.database();
-      db.collection('gdTravelData').get()
-        .then((res) => {
-          console.log(res.data[0].list);
+      try {
+        const value = wx.getStorageSync('gdTravelData');
+        if (value) {
+          console.log(value);
           let arr = [];
-          for (let i in res.data[0].list) {
+          for (let i in value) {
             let data = {
-              name: res.data[0].list[i],
+              name: value[i],
               selected: true
             }
             arr.push(data);
@@ -139,8 +139,11 @@ Page({
               data: arr
             }]
           });
-          chart.hideLoading();
-        })
+        }
+        chart.hideLoading();
+      } catch (error) {
+        
+      }
     } else {
       // 如果未初始化成功 则1秒后重新获取数据
       setTimeout(function() {
